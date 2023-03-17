@@ -3,31 +3,87 @@
   font-family: 'Mouse Memoirs';
   color: white;
   --device-color: orange;
+  --dark-font: rgb(128, 128, 128);
 }
 
 .header{
   background-color: var(--device-color);
-  margin: 1em 2em 0 2em;
-  padding: .2em;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
   /*Just for control*/
   border-bottom: 2px dotted red;
+  border-radius: 10px 10px 0 0;
+  height: 5em;
+  margin: 1em 10em 0 10em;
+  padding: .2em;
+  text-align: center;
 }
 
 .device-body{
   background-color: var(--device-color);
-  height: 90vh;
-  margin: 0 2em;
+  border-radius:  0 0 10px 10px;
+  height: 71vh;
+  margin: 0 10em;
   position: relative;
 }
 
 .device-body__screen {
   background-color: grey;
-  height: 80%;
-  width: 90%;
+  height: 20em;
+  width: 20em;
   position: absolute;
-  top: 50%;
+  top: 6em;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30.5%);
+}
+
+
+.device-body__button-menu{
+  position:absolute;
+  top: 20em;
+  border: 2px solid red;
+  width:100%;
+  height: calc(70vh - 20em);
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 10px; 
+  grid-template-areas: 
+    "btn-1 options options options btn-2"
+    "btn-1 small_opt medium_opt large_opt btn-2"; 
+}
+.btn-1 { grid-area: btn-1;
+          position:absolute;
+          top: 1em;
+          left:0.5em;
+           }
+
+.options { grid-area: options;
+          text-align: center;
+           }
+
+.btn-2 { grid-area: btn-2; 
+         position:absolute;
+         top: 1em;
+         right:0.5em;}
+.small_opt { grid-area: small_opt; }
+.medium_opt { grid-area: medium_opt; }
+.large_opt { grid-area: large_opt; }
+
+
+
+.button-menu__btn{
+  border-radius: 100%;
+  height: 
+}
+
+.btn{
+  border-radius: 100%;
+  width: 70%;
+  height: 70%;
+  color: var(--dark-font);
+}
+
+.btn-b{
+  color: var(--dark-font);
+  font-size: 1em;
+  
 }
