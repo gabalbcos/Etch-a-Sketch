@@ -6,10 +6,12 @@
   --dark-font: rgb(128, 128, 128);
 }
 
+.body{
+  align-items: center;
+}
+
 .header{
   background-color: var(--device-color);
-  /*Just for control*/
-  border-bottom: 2px dotted red;
   border-radius: 10px 10px 0 0;
   height: 5em;
   margin: 1em 10em 0 10em;
@@ -20,7 +22,7 @@
 .device-body{
   background-color: var(--device-color);
   border-radius:  0 0 10px 10px;
-  height: 71vh;
+  height: 28em;
   margin: 0 10em;
   position: relative;
 }
@@ -28,7 +30,7 @@
 .device-body__screen {
   background-color: grey;
   height: 20em;
-  width: 20em;
+  width: 80%;
   position: absolute;
   top: 6em;
   left: 50%;
@@ -39,9 +41,8 @@
 .device-body__button-menu{
   position:absolute;
   top: 20em;
-  border: 2px solid red;
   width:100%;
-  height: calc(70vh - 20em);
+  height: 8em;
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
@@ -52,38 +53,33 @@
 }
 .btn-1 { grid-area: btn-1;
           position:absolute;
-          top: 1em;
           left:0.5em;
            }
 
 .options { grid-area: options;
           text-align: center;
+          font-size: 1.3rem;
            }
 
 .btn-2 { grid-area: btn-2; 
          position:absolute;
-         top: 1em;
          right:0.5em;}
+
 .small_opt { grid-area: small_opt; }
 .medium_opt { grid-area: medium_opt; }
 .large_opt { grid-area: large_opt; }
 
-
-
-.button-menu__btn{
-  border-radius: 100%;
-  height: 
-}
-
 .btn{
   border-radius: 100%;
-  width: 70%;
-  height: 70%;
+  top: 2em;
+  width: 4em;
+  height: 4em;
   color: var(--dark-font);
 }
 
 .btn-b{
   color: var(--dark-font);
   font-size: 1em;
+  height: 2em;
   
 }
