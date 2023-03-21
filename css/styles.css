@@ -123,23 +123,39 @@
 
 @media only screen and (min-width:769px) {
   .header{
-    margin: 20px 20px 0 20px;
+    margin: 5px 5em 0 5em;
   }
 
   .device-body{
-    margin: 0 20px;
-    height: 450px;
+    margin: 0 5em;
+    height: 700px;
    
   }
   
   .device-body__screen {
-    height: 360px;
-    width: 360px;
+    height: 560px;
+    width: 560px;
+    top: 230px;
   }
 
   .device-body__button-menu{
-    top: 374px;
-    height: 120px;
+    top: 620px;
+    height: 150px;
+    padding: 0 200px;
   }
-}
+
+  .btn{
+    border-radius: 100%;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    color: var(--dark-font);
+  }
+  
+  .btn-b{
+    color: var(--dark-font);
+    font-size: 20px;
+    height: 30px;
+    
+
 }
