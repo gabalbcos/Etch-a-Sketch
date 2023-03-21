@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   font-family: 'Mouse Memoirs';
   color: white;
@@ -6,11 +6,11 @@
   --dark-font: rgb(128, 128, 128);
 }
 
-.body{
+.body {
   align-items: center;
 }
 
-.header{
+.header {
   background-color: var(--device-color);
   border-radius: 10px 10px 0 0;
   height: 85px;
@@ -19,8 +19,8 @@
   text-align: center;
 }
 
-.device-body{
-  background-color: var(--device-color); 
+.device-body {
+  background-color: var(--device-color);
   height: 300px;
   margin: 0 10px;
   position: relative;
@@ -37,115 +37,121 @@
   transform: translate(-50%, -30.5%);
 }
 
-.device-body__button-menu{
+.device-body__button-menu {
   background-color: var(--device-color);
-  position:absolute;
+  position: absolute;
   top: 300px;
-  width:100%;
+  width: 100%;
   height: 120px;
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 0px 10px; 
-  grid-template-areas: 
-    "btn-1 options options options btn-2"
-    "btn-1 small_opt medium_opt large_opt btn-2"; 
-    border-radius: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 10px;
+  grid-template-areas:
+      "btn-1 options options options btn-2"
+      "btn-1 small_opt medium_opt large_opt btn-2";
+  border-radius: 0 0 10px 10px;
 }
-.btn-1 { grid-area: btn-1;
-          position:absolute;
-          left:10px;
-           }
+.btn-1 {
+  grid-area: btn-1;
+  position: absolute;
+  left: 10px;
+}
 
-.options { grid-area: options;
-          text-align: center;
-          font-size: 1.3rem;
-           }
+.options {
+  grid-area: options;
+  text-align: center;
+  font-size: 1.3rem;
+}
 
-.btn-2 { grid-area: btn-2; 
-         position:absolute;
-         right:10px;}
+.btn-2 {
+  grid-area: btn-2;
+  position: absolute;
+  right: 10px;
+}
 
-.small_opt { grid-area: small_opt; }
-.medium_opt { grid-area: medium_opt; }
-.large_opt { grid-area: large_opt; }
+.small_opt {
+  grid-area: small_opt;
+}
+.medium_opt {
+  grid-area: medium_opt;
+}
+.large_opt {
+  grid-area: large_opt;
+}
 
-.btn{
+.btn {
   top: 20px;
   width: 60px;
   height: 60px;
   color: var(--dark-font);
 }
 
-.btn-b{
+.btn-b {
   color: var(--dark-font);
   font-size: 12px;
   height: 30px;
-  
+
 }
 
 /*tablet*/
 @media only screen and (min-width: 481px) and (max-width:768px) {
-  .header{
-    margin: 20px 20px 0 20px;
+  .header {
+      margin: 20px 20px 0 20px;
   }
 
-  .device-body{
-    margin: 0 20px;
-    height: 450px;
-   
+  .device-body {
+      margin: 0 20px;
+      height: 450px;
+
   }
-  
+
   .device-body__screen {
-    height: 360px;
-    width: 360px;
+      height: 360px;
+      width: 360px;
   }
 
-  .device-body__button-menu{
-    top: 374px;
-    height: 120px;
+  .device-body__button-menu {
+      top: 374px;
+      height: 120px;
   }
 }
 
 /*Desktop*/
 
 @media only screen and (min-width:769px) {
-  .header{
-    margin: 5px 5em 0 5em;
+  .header {
+      margin: 5px 5em 0 5em;
   }
 
-  .device-body{
-    margin: 0 5em;
-    height: 700px;
-   
+  .device-body {
+      margin: 0 5em;
+      height: 700px;
+
   }
-  
+
   .device-body__screen {
-    height: 560px;
-    width: 560px;
-    top: 230px;
+      height: 560px;
+      width: 560px;
+      top: 230px;
   }
 
-  .device-body__button-menu{
-    top: 620px;
-    height: 150px;
-    padding: 0 200px;
+  .device-body__button-menu {
+      top: 620px;
+      height: 150px;
+      padding: 0 200px;
   }
 
-  .btn{
-    top: 20px;
-    width: 100px;
-    height: 100px;
-    color: var(--dark-font);
+  .btn {
+      top: 20px;
+      width: 100px;
+      height: 100px;
+      color: var(--dark-font);
   }
-  
-  .btn-b{
-    color: var(--dark-font);
-    font-size: 20px;
-    height: 30px;
-  }
-}
 
-.fill{
-  background-color: black;
+  .btn-b {
+      color: var(--dark-font);
+      font-size: 20px;
+      height: 30px;
+  }
 }
