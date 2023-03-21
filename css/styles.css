@@ -71,7 +71,6 @@
 .large_opt { grid-area: large_opt; }
 
 .btn{
-  border-radius: 100%;
   top: 20px;
   width: 60px;
   height: 60px;
@@ -134,7 +133,6 @@
   }
 
   .btn{
-    border-radius: 100%;
     top: 20px;
     width: 100px;
     height: 100px;

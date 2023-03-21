@@ -1,8 +1,8 @@
-
+let color = 'black';
 //buttons
 const btnPickColor = document.querySelector('.btn-1');
 const btnClear = document.querySelector('.btn-2');
-
+const colorButton = document.querySelector('.btn-1');
 
 //grid maker
 function makeGrid(size){
@@ -22,8 +22,14 @@ for(let i = 0; i < area; i++){
  }
 }
 
+colorButton.addEventListener("input", changeColor);
+ 
+
 function colorCell(){
-    this.style.backgroundColor = 'black';  
+    this.style.backgroundColor = color;  
 }
 
-
+function changeColor(){
+    color = colorButton.value;
+    console.log(colorButton.value)
+}
