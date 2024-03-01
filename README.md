@@ -1,5 +1,8 @@
 # Etch-a-Sketch
 Etch-a-Sketch project from the Odin Project curriculum
+View Project:
+https://htmlpreview.github.io/?https://github.com/gabalbcos/Etch-a-Sketch/blob/main/index.html
+
 
 //Functionality 
 //Basic:
